@@ -16,3 +16,26 @@
 - MySQL — база данных
 - HTML/CSS — адаптивный интерфейс
 - Сессии — аутентификация и авторизация
+
+Пример реализации.
+<img width="1697" height="929" alt="image" src="https://github.com/user-attachments/assets/78616d5e-40e9-410a-bda2-708d5abd1a65" />
+
+
+<img width="1748" height="925" alt="image" src="https://github.com/user-attachments/assets/36bc30e7-c6e4-4a20-ae30-c6ff466f57f8" />
+
+<img width="1874" height="915" alt="image" src="https://github.com/user-attachments/assets/438391b4-4785-439a-b723-f7b9fc93b6cb" />
+
+
+<img width="1037" height="755" alt="image" src="https://github.com/user-attachments/assets/e701802c-6c7d-4c89-82d6-8b4c2601bb56" />
+
+
+<img width="874" height="535" alt="image" src="https://github.com/user-attachments/assets/72f84419-b15d-40cb-a94e-abf9207b9afa" />
+
+
+
+
+
+
+
+
+
