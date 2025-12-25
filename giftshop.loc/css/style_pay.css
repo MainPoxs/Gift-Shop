@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #909380;
+    color: #4a3a30;
+    background-attachment: fixed;
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+.container {
+    background-color: #fef5e4;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.15),
+        0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d8d4c6;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #909380;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+h3 {
+    color: #909380;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.card-input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #c3b8a7;
+    border-radius: 8px;
+    background-color: #fdf9f0;
+    font-size: 1em;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.card-input:focus {
+    outline: none;
+    border-color: #c38b5e;
+    box-shadow: 0 0 0 3px rgba(195, 139, 94, 0.2);
+}
+
+.card-icon {
+    position: relative;
+}
+
+.card-icon::after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3em;
+    pointer-events: none;
+    color: #c38b5e;
+}
+
+.card-row {
+    display: flex;
+    gap: 12px;
+}
+
+.card-row .card-input {
+    flex: 1;
+}
+
+.btn-pay {
+    padding: 12px;
+    background-color: #edc1ac;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn-pay:hover {
+    background-color: #c38b5e;
+}
+
+.card-form p {
+    font-size: 0.85em;
+    color: #909380;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    color: #909380;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+.back-link:hover {
+    color: #c38b5e;
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 520px) {
+    .container {
+        margin: 20px;
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .card-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

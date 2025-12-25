@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #909380;
+    color: #4a3a30;
+    background-attachment: fixed;
+    }
+
+    .container {
+    background-color: #fef5e4;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.15),
+    0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d8d4c6;
+    }
+
+    h1 {
+    text-align: center;
+    color: #909380;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 24px;
+    }
+
+    .order-item {
+    background-color: #fdf9f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #eae2d2;
+    }
+
+    .order-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    }
+
+    .order-date {
+    font-size: 0.9em;
+    color: #7a6a55;
+    margin-bottom: 12px;
+    }
+
+    .order-status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    }
+
+    .status-paid {
+    background-color: #d4edda;
+    color: #155724;
+    }
+
+    .status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+    }
+
+    .order-total {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #c38b5e;
+    font-weight: bold;
+    }
+
+    .product-in-order {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #f0e8d8;
+    }
+
+    .product-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #f9f5ee;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-image:hover {
+    transform: scale(0.92);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+    .product-info {
+    flex: 1;
+    font-size: 0.95em;
+    }
+
+    .product-name {
+    font-weight: 600;
+    color: #4a3a30;
+    margin-bottom: 4px;
+    }
+
+    .product-qty {
+    color: #7a6a55;
+    font-size: 0.9em;
+    }
+
+    .no-orders {
+    text-align: center;
+    color: #7a6a55;
+    font-style: italic;
+    padding: 20px;
+    }
+
+    .back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #909380;
+    text-decoration: none;
+    font-size: 0.95em;
+    }
+
+    .back-link:hover {
+    color: #c38b5e;
+    text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+    .container {
+    margin: 15px;
+    padding: 20px;
+    }
+
+    h1 {
+    font-size: 1.6em;
+    }
+
+    .product-image {
+    width: 50px;
+    height: 50px;
+    }
+    }

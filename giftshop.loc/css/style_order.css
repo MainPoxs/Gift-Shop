@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #909380;
+    color: #4a3a30;
+    background-attachment: fixed;
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+.container {
+    background-color: #fef5e4;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.15),
+        0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d8d4c6;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #909380;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.orderForm {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+details {
+    border: 1px solid #d8d4c6;
+    border-radius: 12px;
+    background-color: #fdf9f0;
+    padding: 20px;
+}
+
+summary {
+    font-weight: bold;
+    color: #909380;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 16px;
+}
+
+details[open] summary {
+    color: #c38b5e;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #4a3a30;
+    font-size: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #c3b8a7;
+    border-radius: 8px;
+    background-color: #fdf9f0;
+    font-size: 1em;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #c38b5e;
+    box-shadow: 0 0 0 3px rgba(195, 139, 94, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #d8d4c6;
+}
+
+table th {
+    background-color: #fdf9f0;
+    color: #909380;
+    font-weight: 600;
+}
+
+table tfoot td {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #c38b5e;
+    border: none;
+}
+
+.confirmation {
+    margin-top: 10px;
+    padding-top: 16px;
+    border-top: 1px solid #d8d4c6;
+}
+
+.confirmation label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 1em;
+    color: #4a3a30;
+    cursor: pointer;
+}
+
+.confirmation input[type="checkbox"] {
+    margin-top: 4px;
+    transform: scale(1.2);
+}
+.btn-back {
+    display: block;
+    text-align: left;
+    color: #c38b5e;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}
+.btn-pay {
+    width: 100%;
+    padding: 12px;
+    background-color: #edc1ac;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.btn-pay:hover {
+    background-color: #c38b5e;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 16px;
+        padding: 12px;
+        background: #fdf9f0;
+        border-radius: 8px;
+        border: 1px solid #d8d4c6;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50% !important;
+        position: relative;
+        border: none !important;
+    }
+
+    td::before {
+        content: attr(data-label) ":";
+        position: absolute;
+        left: 12px;
+        width: 45%;
+        font-weight: bold;
+        text-align: left;
+        color: #909380;
+    }
+
+    tfoot tr {
+        display: flex;
+        justify-content: space-between;
+        background: none !important;
+        border: none !important;
+        margin-top: 16px;
+        padding: 0 !important;
+    }
+
+    tfoot td {
+        flex: 1;
+        text-align: right;
+    }
+
+    tfoot td:first-child {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .btn-pay {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
